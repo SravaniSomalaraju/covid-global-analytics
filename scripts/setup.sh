@@ -54,7 +54,8 @@ fi
 
 
 echo " ============================================="
-echo "Checking Spark..."
+
+echo "Checking Spark and vesrion..."
 
 if command -v spark-submit &> /dev/null
 then
@@ -84,6 +85,7 @@ else
 fi
 
 echo " ============================================"
+
 echo "=====Checking PySpark...====="
 
 if command -v pyspark &> /dev/null
@@ -117,4 +119,4 @@ echo "PySpark:"
 pyspark --version
 
 echo ""
-echo "===== SETUP COMPLETED SUCCESSFULLY ====="
+echo "===== Setup Completed Successfully ====="
